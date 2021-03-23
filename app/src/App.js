@@ -1,6 +1,14 @@
-import React from 'react'
-
+import React from "react";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import Header from "./sections/Header";
 const App = () => (
-    
-)
-export default App
+  <React.Fragment>
+    <CssBaseline />
+    <Container maxWidth="lg">
+      <Header />
+    </Container>
+  </React.Fragment>
+);
+export default App;
