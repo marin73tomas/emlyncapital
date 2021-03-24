@@ -2,11 +2,11 @@ import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Box from "@material-ui/core/Box";
 import styles from "../styles/index";
-const classes = styles();
 
 export default function Header() {
+  const classes = styles();
   return (
-    <Box className={classes.hero} component="section" m={1}>
+    <Box className={classes.header} component="section" m={0}>
       <Navbar />
       <Hero />
     </Box>
