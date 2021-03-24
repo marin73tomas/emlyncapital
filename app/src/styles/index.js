@@ -27,10 +27,30 @@ const myStyles = makeStyles({
     fontSize: "21px",
     fontWeight: 400,
   },
+  link: {
+    "&:hover": {
+      transform: "scale(1.2)",
+      cursor: "pointer",
+    },
+    transition: "all 0.15s linear",
+    display: "flex",
+  },
   header: {
     backgroundImage: `url(${heroImg})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
+    minHeight: "100vh",
+    "&::before": {
+      content: "''",
+      backgroundColor: "black",
+      position: "absolute",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      display: "block",
+      opacity: 0.3,
+    },
   },
   logo: {
     maxWidth: "80px",

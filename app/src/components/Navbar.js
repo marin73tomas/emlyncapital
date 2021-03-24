@@ -11,27 +11,27 @@ const Navbar = () => {
       <img alt="logo" className={classes.logo} src={logo} />
       <ul className={classes.navBarMenu}>
         <li>
-          <Link id="/" smooth={true}>
+          <Link className={classes.link} id="/" smooth={true}>
             Home
           </Link>
         </li>
         <li>
-          <Link id="about" smooth={true}>
+          <Link className={classes.link} id="about" smooth={true}>
             About Us
           </Link>
         </li>
         <li>
-          <Link id="coupons" smooth={true}>
+          <Link className={classes.link} id="coupons" smooth={true}>
             Coupons
           </Link>
         </li>
         <li>
-          <Link id="process" smooth={true}>
+          <Link className={classes.link} id="process" smooth={true}>
             Our Process
           </Link>
         </li>
         <li>
-          <Link id="home" smooth={true}>
+          <Link className={classes.link} id="home" smooth={true}>
             Contact
           </Link>
         </li>
