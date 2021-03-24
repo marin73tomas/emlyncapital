@@ -1,6 +1,7 @@
 import { makeStyles } from "@material-ui/core/styles";
 import heroImg from "../img/Hero.jpg";
-
+export const GOLD_COLOR = "#CDB37B";
+export const BLACK_COLOR = "#232323";
 const myStyles = makeStyles({
   root: {
     fontFamily: "Roboto",
@@ -16,6 +17,7 @@ const myStyles = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     padding: "0 3em",
+    position: "relative",
   },
   navBarMenu: {
     display: "flex",
@@ -56,5 +58,41 @@ const myStyles = makeStyles({
     maxWidth: "80px",
     padding: "1em 0",
   },
+  h2: {
+    fontWeight: 600,
+    fontSize: "54px",
+  },
+  h3: {
+    fontWeight: 600,
+    fontSize: "35px",
+  },
+  goldText: {
+    color: GOLD_COLOR,
+  },
+  whiteText: {
+    color: "white",
+  },
+  button: {
+    borderRadius: "20px",
+    padding: "12px 24px",
+    color: BLACK_COLOR,
+  },
+  goldButton: {
+    backgroundColor: GOLD_COLOR,
+  },
+  whiteButton: {
+    backgroundColor: "white",
+  },
+  hero: {
+    position: "relative",
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    gap: "0.5em",
+    marginTop: "20vh",
+  },
 });
+
 export default myStyles;

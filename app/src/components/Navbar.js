@@ -7,31 +7,26 @@ const Navbar = () => {
   const classes = styles();
 
   return (
-    <Container className={classes.navBar} maxWidth="lg">
+    <Container className={classes.navBar} maxWtoth="lg">
       <img alt="logo" className={classes.logo} src={logo} />
       <ul className={classes.navBarMenu}>
         <li>
-          <Link className={classes.link} id="/" smooth={true}>
+          <Link className={classes.link} to="/" smooth={true}>
             Home
           </Link>
         </li>
         <li>
-          <Link className={classes.link} id="about" smooth={true}>
+          <Link className={classes.link} to="about" smooth={true}>
             About Us
           </Link>
         </li>
         <li>
-          <Link className={classes.link} id="coupons" smooth={true}>
-            Coupons
-          </Link>
-        </li>
-        <li>
-          <Link className={classes.link} id="process" smooth={true}>
+          <Link className={classes.link} to="process" smooth={true}>
             Our Process
           </Link>
         </li>
         <li>
-          <Link className={classes.link} id="home" smooth={true}>
+          <Link className={classes.link} to="contact" smooth={true}>
             Contact
           </Link>
         </li>
