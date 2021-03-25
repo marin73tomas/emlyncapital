@@ -22,7 +22,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link className={classes.link} to="process" smooth={true}>
-            Our Process
+            Why Us
           </Link>
         </li>
         <li>
